@@ -1,0 +1,19 @@
+﻿# go-tools
+
+A repo with a set of tools particulary useful in Go projects.
+
+You can import it, as in: 
+
+```
+import (
+	utils "github.com/sadasant/go-utils"
+)
+```
+
+Or you can add it to the scope, like this:
+
+```
+import (
+	. "github.com/sadasant/go-utils"
+)
+```
