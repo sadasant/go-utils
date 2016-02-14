@@ -39,7 +39,7 @@ func Ask(q string) string {
 
 func AskPrevious(q, old string) string {
 	if old == "" {
-		return Ask(q)
+		return Ask(q + ": ")
 	} else {
 		resp := Ask(fmt.Sprintf("%s [%s]", q, old))
 		if resp == "" {
