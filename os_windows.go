@@ -3,7 +3,6 @@
 package utils
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -19,7 +18,7 @@ func HomePath() string {
 func GetPathFromHome(path string) string {
 	// Note: Apparently there' s no MkdirAll in the windows version of Go
 	parts := strings.Split(path, "/")
-	full := homePath()
+	full := HomePath()
 	for i, part := range parts {
 		full += "\\" + part
 		if i < len(parts)-1 {
