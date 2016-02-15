@@ -1,6 +1,6 @@
 // +build windows
 
-package main
+package utils
 
 // On some OSs is better to simply ignore colors
 
