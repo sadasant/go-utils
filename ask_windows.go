@@ -39,7 +39,7 @@ echo $password
 	cmd.Stdout = &b
 	cmd.Stdin = os.Stdin
 
-	fmt.Printf("%s: ", q)
+	fmt.Printf("%s", q)
 
 	// Clean OS Exit
 	c := make(chan os.Signal, 1)
